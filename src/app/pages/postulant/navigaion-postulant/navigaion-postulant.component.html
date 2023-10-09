@@ -1,0 +1,39 @@
+
+<mat-toolbar class="bar">
+  <div class="left-content">
+    <a>
+      <img src="../../../../assets/images/image 15.png" alt="Logo" class="img">
+    </a>
+  </div>
+  <div class="center-content">
+    <span class="slogan">"Find Your Dream Job with Us!"</span>
+  </div>
+  <div class="right-content">
+    <a mat-button (click)="Home()">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </a>
+    <a mat-button (click)="configuration()">
+      <mat-icon>settings</mat-icon>
+      <span>Ajustes</span>
+    </a>
+    <a mat-button (click)="exit()">
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Salir</span>
+    </a>
+  </div>
+</mat-toolbar>
+<div class="buttons-container">
+  <a mat-button (click)="Home()">
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </a>
+  <a mat-button (click)="configuration()">
+    <mat-icon>settings</mat-icon>
+    <span>Ajustes</span>
+  </a>
+  <a mat-button (click)="exit()">
+    <mat-icon>exit_to_app</mat-icon>
+    <span>Salir</span>
+  </a>
+</div>

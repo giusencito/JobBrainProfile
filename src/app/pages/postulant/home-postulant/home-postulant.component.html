@@ -1,0 +1,83 @@
+
+
+
+<app-navigaion-postulant></app-navigaion-postulant>
+
+<div class="background" >
+  <br>
+  <h1 class="text-1">
+    Bienvenido Postulante {{name}}  {{last_name}}
+  </h1>
+  <br>
+  <br>
+  <div class="big">
+  <mat-card class="card">
+    <br>
+    <mat-card-title class="cardlefttitle">Recomendación de empleos</mat-card-title>
+    <br>
+    <mat-card-content class="content">
+      <div style="margin-left: auto; margin-right: auto;">
+        <img src="../../../../assets/images/recomendationImage.png">
+
+      </div>
+
+      <div class="content2">
+       
+        <p>¡Estudiantes de pregrado en ingeniería de software, es hora de encender el motor de tu carrera profesional!</p>
+     
+    
+        <p>
+          En esta sección podrás realizar tests de orientación profesional para la identificación de tu perfil,
+           obtener empleos que más se relacionen contigo y conseguir cursos de capacitación que te ayudarán a 
+           tener más oportunidades en la obtención de empleos. Todo presentado con respaldo experto.
+        </p>
+     
+        <div class="center"><button mat-raised-button class="start" (click)="startTest()">Comenzar</button></div>
+      </div>
+
+    </mat-card-content>
+    <br>
+  </mat-card>
+  <br>
+  <br>
+  <mat-card class="card">
+    <br>
+    <mat-card-title class="cardrighttitle">Historial de recomendaciones</mat-card-title>
+    <br>
+    <mat-card-content class="contenthistorial">
+      
+
+      <div class="content22">
+       
+     
+    
+        <p  style="margin-left: auto; margin-right: auto;">
+          Aqui se encuentran los resultados de los tests, las recomendaciones de empleo y los cursos de 
+          capacitación que se han brindado en la primera sección, para que puedas revisarlas nuevamente y 
+          ver si te interesan.
+        </p>
+     
+        <div class="center"><button mat-raised-button class="start" (click)="history()">Ver</button></div>
+      </div>
+      <div  class="img">
+        <img src="../../../../assets/images/truehistorialiamge.png" class="hisimg">
+
+      </div>
+    </mat-card-content>
+    <br>
+  </mat-card>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+</div>

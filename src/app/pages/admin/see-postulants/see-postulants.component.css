@@ -1,0 +1,103 @@
+.background{
+    background-image: url('../../../../assets/images/adminimage.png');
+    background-size: cover;
+    background-position: center;
+   
+    
+    z-index: -1;;
+    
+
+
+}
+.mat-card{
+   width: 90%;
+  
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+.input{
+    width: 100%;
+    font-family: 'Futura';
+    font-weight: italic;
+    font-style: normal;
+    font-size: 1.2rem;
+   
+}
+.center{
+    display: flex;
+    justify-content: center;
+
+ 
+}
+.formut{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 500px;
+ 
+  
+}
+.button{
+    width: 100%;
+    font-family: 'Futura';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+.button2{
+    font-family: 'Futura';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1rem;
+}
+.text{
+    font-family: 'Futura';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+h3{
+    font-family: 'Futura';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 8rem;
+}
+p{
+    font-family: 'Futura';
+    font-weight: italic;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+mat-list-item {
+   
+}
+.loading-container {
+    
+   
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .centermax{
+    display: flex;
+    justify-content:center;
+
+  }
+  .norecommendation{
+    color: #080808;
+      font-family: 'Futura';
+      font-weight: italic;
+      font-style: normal;
+      font-size: 5.5rem;
+      margin-top: 100px;
+     margin-bottom: 500px;
+    
+    
+    }
+    .mat-list-item{
+        display: flex;
+        justify-content:center;
+        flex-direction: row;
+        
+    }

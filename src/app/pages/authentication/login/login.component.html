@@ -1,0 +1,39 @@
+
+<app-spinner></app-spinner>
+<div class="background">
+  <form [formGroup]="loginform">
+    <mat-card class="card"  color="accent">
+      <div class="imgaelog">
+        <img src="../../../../assets/images/image 15.png" class="img">
+      </div>
+      
+      <h2 class="title">INICIO DE SESIÓN</h2>
+     
+      <mat-form-field class="input" appearance="outline">
+        <input matInput placeholder="Usuario"  [(ngModel)]="Login.username" formControlName="username" #username/>
+        <mat-icon matSuffix>person</mat-icon>
+        <mat-error  align="start" *ngIf="loginform.controls['username'].dirty && loginform.hasError('required','username')">Es requerido</mat-error>
+
+      </mat-form-field>
+      <mat-form-field class="input" appearance="outline">
+        <input matInput type="password" placeholder="Contraseña" [(ngModel)]="Login.password" formControlName="password" #username/>
+        <mat-icon matSuffix>lock</mat-icon>
+        <mat-error  align="start" *ngIf="loginform.controls['password'].dirty && loginform.hasError('required','password')">Es requerido</mat-error>
+
+      </mat-form-field>
+      <div class="login-links">
+        <a routerLink="/forgot-password">¿Olvidó su contraseña?</a>
+        <span></span>
+        <a routerLink="/register">Registrarse</a>
+      </div>
+      <button mat-raised-button class="button" color="garzo" [disabled]="!(loginform.valid)" (click)="login()" >LOGIN</button>
+   
+      
+    </mat-card>
+  </form>
+
+
+
+</div>
+
+

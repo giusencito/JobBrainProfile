@@ -1,0 +1,42 @@
+
+<app-spinner></app-spinner>
+<app-navigaion-postulant></app-navigaion-postulant>
+<div class="background">
+    <br>
+    <div class="card">
+        <p class="tittle">{{testOriented}}</p>
+        <br>
+<p class="sub">{{sectionName}}</p>
+  <br>
+  <p class="subquestion"> 
+    Pregunta {{questionNumber}} de {{total}}
+  </p>
+  <br>
+  <p class="sub"> 
+    {{questionName}}
+  </p>
+  <br>
+  <mat-radio-group [(ngModel)]="optionSelected">
+    <div *ngFor="let option of optionArray" class="radio-button-container">
+      <mat-radio-button [value]="option.optionscore" >
+        <p class="radio-button">{{option.optionname}}</p></mat-radio-button>
+    </div>
+  </mat-radio-group>
+  
+  
+  <button  mat-raised-button class="button" [disabled]="optionSelected<0" (click)="continue()">Continuar</button>
+  <br>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    
+</div>

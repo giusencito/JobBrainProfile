@@ -1,0 +1,35 @@
+
+
+
+<app-navigation-admin></app-navigation-admin>
+<div class="background">
+
+  
+
+
+<mat-card class="card" *ngIf="name;else loadingSpinner">
+
+  <div class="center">
+    <img src="../../../../assets/images/image 4.png" class="img">
+  </div>
+  <br>
+  <mat-card-title class="tittle">{{name}}     {{last_name}}</mat-card-title>
+  <br>
+  <p>{{email}}</p>
+  <div class="section">
+    <button mat-flat-button color="primary" (click)="history()">Ver Recomendaciones</button>
+    <button mat-flat-button color="warn" (click)="deletedpostulant()">Eliminar Postulante</button>
+  </div>
+
+
+</mat-card>
+<ng-template #loadingSpinner>
+  <div class="loading-container">
+    <mat-spinner diameter="500"></mat-spinner>
+  </div>
+</ng-template>
+
+
+
+
+</div>

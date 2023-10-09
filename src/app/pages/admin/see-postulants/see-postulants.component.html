@@ -1,0 +1,75 @@
+
+
+<app-navigation-admin></app-navigation-admin>
+<div class="background">
+<div class="center" >
+  <mat-card *ngIf="dataSourceOriginal.data.length">
+    <form [formGroup]="searchform">
+    <mat-form-field class="input" appearance="outline" >
+   
+      <input matInput placeholder="Nombre" formControlName="search" [(ngModel)]="username">
+      <mat-icon matSuffix>person_search</mat-icon>
+     
+    </mat-form-field>
+    <button mat-raised-button class="button"  (click)="setusers(username)"> Buscar</button>
+  </form>
+  </mat-card>
+
+  
+
+
+</div>
+
+
+
+
+
+
+<div class="formut" *ngIf="start; else loadingSpinner">
+<mat-card *ngIf="dataSource.data.length" class="mat-card">
+
+  <mat-list >
+    <div mat-subheader class="text">Postulantes</div>
+    
+    <mat-list-item  *ngFor="let postulant of dataSource.data" >
+     
+      <mat-icon matListItemIcon>perm_contact_calendar</mat-icon>
+      <p matListItemTitle>{{postulant.username}} </p>
+      <p matListItemLine>{{postulant.email}}</p>
+      <div matListItemLine>
+
+      </div>
+      <button mat-raised-button  (click)="gopostulant(postulant.id)" class="button2">Ver</button>
+      
+    </mat-list-item>
+    
+  </mat-list>
+    
+</mat-card>
+
+
+</div>
+<ng-template #loadingSpinner>
+  <div class="loading-container">
+    <mat-spinner diameter="500"></mat-spinner>
+  </div>
+</ng-template>
+<div class="centermax" *ngIf="dataSource.data.length==0 && start">
+  <p class="norecommendation">No Hay Postulantes</p>
+</div>
+
+
+
+<br>
+
+
+
+
+</div>
+
+
+
+
+
+
+

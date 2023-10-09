@@ -1,0 +1,80 @@
+.background{
+    background-image: url('../../../../assets/images/adminimage.png');
+    background-size: cover;
+    background-position: center;
+    height: 95%;
+    
+    z-index: -1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+
+
+}
+
+
+
+.center{
+    display: flex;
+    justify-content: center;
+  
+  }
+  .tittle{
+   
+    font-family: 'Futura';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5rem;
+  }
+  p{
+    font-family: 'Futura';
+    font-weight: italic;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  }
+  button{
+    font-family: 'Futura';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5rem;
+    width: 30%;
+  }
+  .section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .loading-container {
+    
+   
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+@media (max-width: 767px) {
+    
+    .card{
+        width: 100%;
+    }
+    .section{
+      flex-direction: column;
+    }
+    button{
+      width: 100%;
+    }
+    .background{
+      height: auto;
+    }
+
+}

@@ -1,0 +1,152 @@
+.background{
+
+
+    background-image: url('../../../../assets/images/adminimage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    z-index: -1;
+}
+.justify{
+    display:flex;
+    justify-content: space-between;
+flex-direction: row;
+}
+.mat-grid-list {
+    width: 100%; 
+   
+  }
+  img{
+    width: 40%;
+    height: 700px;
+  }
+.cardexp{
+    background: #87CEEB;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 48px;
+width: 50%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+  .sub{
+    font-size: 1.3rem;
+    font-weight: italic; 
+    font-family: 'Futura';
+    
+    line-height: 1;
+    text-align: center;
+}
+.progress-number {
+    
+    font-weight: bold;
+    color: #000;
+    
+        position: absolute;
+        top: 35%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        font-size: 1.3rem;
+        font-weight: italic;
+        font-family: 'Futura';
+        color: #000;
+      
+  }
+  .button{
+    border-radius: 4px;
+    width: 50%;
+    background: #1E88E5;
+    color:white;
+    font-family: Futura;
+    font-size: 1rem;
+    font-style: normal;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    margin-left: 5%;
+    }
+    ::ng-deep .spinnergood circle, mat-spinner circle{
+      stroke: #17a689;
+    }
+    ::ng-deep .spinnermed circle, mat-spinner circle{
+      stroke: #9a9a00;
+    }
+    ::ng-deep .spinnerbad circle, mat-spinner circle{
+      stroke: #8b0000;
+    }
+    .mat-mdc-unelevated-button:not(:disabled) {
+      background-color: #1E88E5;
+    color: white;
+    }
+    @media (max-width: 767px) {
+      .justify {
+       flex-direction: column;
+      }
+      img{
+        width:100%
+      }
+      .cardexp{
+        min-width: auto;
+        width: 50%;
+      }
+      .button{
+        
+        width: 80%;
+      }
+      .sub{
+        font-size: 1.2rem;
+
+      }
+    }
+
+    .cardexp{
+      background: #87CEEB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 48px;
+  min-width: 200px;
+  }
+  .container {
+      display: flex;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+      overflow-y: auto;
+    }
+    .sub{
+      font-size: 1.3rem;
+      font-weight: italic; 
+      font-family: 'Futura';
+      
+      line-height: 1;
+      text-align: center;
+  }
+  .progress-number {
+      
+      font-weight: bold;
+      color: #000;
+      
+          position: absolute;
+          top: 30%;
+          left: 52%;
+          transform: translate(-50%, -50%);
+          font-size: 1.3rem;
+          font-weight: italic;
+          font-family: 'Futura';
+          color: #000;
+        
+    }
+    
+  
+  
+    .spinnermed.mat-mdc-progress-spinner {
+      --mdc-circular-progress-active-indicator-color: #9a9a00;
+  }
+  .spinnergood.mat-mdc-progress-spinner {
+      --mdc-circular-progress-active-indicator-color: #17a689;
+  }
+  .spinnerbad.mat-mdc-progress-spinner {
+      --mdc-circular-progress-active-indicator-color: #8b0000;
+  }
